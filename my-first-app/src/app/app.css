@@ -1,0 +1,137 @@
+/* Reset & Body */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f0f4f8; /* light modern background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #ff6b6b; /* warm accent */
+  margin-bottom: 0.3rem;
+}
+
+header .position {
+  color: #0984e3; /* cool accent */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+header a {
+  color: #6c5ce7; /* link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #fd79a8;
+}
+
+/* Sections */
+section {
+  background: #ffffff;
+  padding: 2rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #ff6b6b;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #0984e3;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+/* Lists */
+ul {
+  list-style-type: disc;
+  padding-left: 1.8rem;
+  margin-top: 0.5rem;
+}
+
+/* Technical Proficiencies Grid */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.tech-category h3 {
+  color: #6c5ce7;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Projects Grid */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  display: block;
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #2d3436;
+  background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  border: 1px solid #fd79a8;
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+  color: #d63031;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #2d3436;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+  background: linear-gradient(135deg, #81ecec, #74b9ff);
+  border-color: #0984e3;
+}
