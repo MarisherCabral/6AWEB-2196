@@ -1,0 +1,24 @@
+.skills-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ff6b81;
+  border-left: 4px solid #74b9ff;
+  padding-left: 0.7rem;
+}
+
+.skills-section ul {
+  display: inline-block; /* center the list itself */
+  text-align: left;      /* keep bullet points left-aligned */
+  padding-left: 1.8rem;
+  margin-top: 0.5rem;
+}
+
+.skills-section li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #dcdde1;
+}
+
+.skills-section {
+  text-align: center; /* center heading */
+}

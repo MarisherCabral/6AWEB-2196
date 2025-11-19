@@ -1,0 +1,35 @@
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tech-category {
+  background: #2f2f3f; /* dark card */
+  border-radius: 12px;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.tech-category:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+}
+
+.tech-category h3 {
+  color: #ff6b81;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.tech-category ul {
+  list-style-type: circle;
+  padding-left: 1.5rem;
+}
+
+.tech-category li {
+  margin-bottom: 0.4rem;
+  color: #dcdde1;
+}

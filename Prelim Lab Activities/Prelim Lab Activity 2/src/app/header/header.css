@@ -1,0 +1,81 @@
+/* Dark Mode Header */
+header {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #444;
+}
+
+section, header {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; /* center text content */
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #ff6b81; /* warm pink accent */
+  margin-bottom: 0.3rem;
+  letter-spacing: -1px;
+}
+
+header .position {
+  color: #74b9ff; /* cool blue accent */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+  color: #dcdde1;
+}
+
+header a {
+  color: #a29bfe; /* violet accent */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #ff6b81;
+}
+
+section {
+  background: #1e1e2f; /* dark card background */
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.7);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #ff6b81;
+  margin-bottom: 1rem;
+  display: inline-block;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #74b9ff;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #dcdde1;
+}

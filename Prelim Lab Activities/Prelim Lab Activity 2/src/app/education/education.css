@@ -1,0 +1,49 @@
+.education-section {
+  background: #1e1e2f; /* dark card background */
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; /* center heading */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.7);
+}
+
+.education-section h2 {
+  font-size: 1.8rem;
+  color: #ff6b81; /* pink accent for heading */
+  margin-bottom: 1rem;
+  display: inline-block;
+  position: relative;
+}
+
+.education-section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #74b9ff; /* blue accent underline */
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+.education-section ul {
+  display: inline-block; /* center the list */
+  text-align: left;      /* keep bullets readable */
+  padding-left: 1.8rem;
+  color: #dcdde1;        /* light text for dark background */
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.education-section li {
+  margin-bottom: 0.8rem;
+}
