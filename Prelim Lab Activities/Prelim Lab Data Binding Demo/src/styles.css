@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background: #12121e; /* dark modern background */
+  color: #dcdde1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  padding: 2rem;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+}
