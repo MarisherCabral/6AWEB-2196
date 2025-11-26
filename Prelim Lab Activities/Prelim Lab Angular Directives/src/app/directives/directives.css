@@ -1,0 +1,131 @@
+
+/* ---------- TABLE WRAPPER ---------- */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 25px 0;
+  background: #f4f5f7; /* soft light background instead of black */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ---------- TABLE HEAD ---------- */
+thead {
+  background: #4a90e2; /* soft blue */
+  color: #ffffff;
+}
+
+thead th {
+  padding: 14px;
+  text-align: left;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* ---------- TABLE ROWS ---------- */
+tbody tr {
+  transition: background 0.2s ease-in-out;
+}
+
+tbody tr:nth-child(even) {
+  background: #e8ebf0; /* alternating row colors */
+}
+
+tbody tr:hover {
+  background: #dce2ea; /* subtle hover */
+}
+
+/* ---------- TABLE CELLS ---------- */
+td {
+  padding: 14px;
+  border-bottom: 1px solid #d0d4db;
+  color: #333333; /* dark text */
+}
+
+td p {
+  margin: 0;
+}
+
+/* Remove last row bottom border */
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ---------- LIST INSIDE TABLE ---------- */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+ul li {
+  background: #ffffff;          /* clean white card */
+  margin: 6px 0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  border-left: 4px solid #4a90e2;
+  transition: 0.2s ease;
+  color: #333;
+}
+
+ul li:hover {
+  background: #f0f4f8; /* soft hover */
+  transform: translateX(2px);
+}
+
+/* ---------- BUTTONS ---------- */
+button {
+  padding: 8px 16px;
+  background: #4a90e2;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.25s;
+}
+
+button:hover {
+  background: #357abd;
+}
+
+/* ---------- STATUS TEXT ---------- */
+.active {
+  color: #1b8a2f;
+  font-weight: bold;
+}
+
+.inactive {
+  color: #c62828;
+  font-weight: bold;
+}
+
+/* ---------- INPUT FIELD ---------- */
+input[type="text"] {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 160px;
+  font-size: 14px;
+  background: #ffffff;
+  color: #333;
+  transition: 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 3px rgba(74,144,226,0.3);
+}
+
+/* ---------- HEADINGS INSIDE TABLE ---------- */
+td h2 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
