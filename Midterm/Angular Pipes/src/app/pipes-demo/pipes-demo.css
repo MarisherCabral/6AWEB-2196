@@ -1,0 +1,39 @@
+/* Modern gradients and card effects */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card shadows and hover animation */
+.shadow-modern {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+/* Gradient titles */
+.text-gradient {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-blue { background: linear-gradient(90deg, #2193b0, #6dd5ed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.text-gradient-green { background: linear-gradient(90deg, #56ab2f, #a8e063); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.text-gradient-yellow { background: linear-gradient(90deg, #f7971e, #ffd200); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.text-gradient-red { background: linear-gradient(90deg, #e52d27, #b31217); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.text-gradient-purple { background: linear-gradient(90deg, #8e2de2, #4a00e0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.text-gradient-teal { background: linear-gradient(90deg, #00c6ff, #0072ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.text-gradient-pink { background: linear-gradient(90deg, #ff758c, #ff7eb3); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.text-gradient-orange { background: linear-gradient(90deg, #ff9966, #ff5e62); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+/* Card text */
+.card-text {
+  font-size: 1rem;
+  color: #333;
+}

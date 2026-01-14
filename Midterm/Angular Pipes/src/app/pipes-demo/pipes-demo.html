@@ -1,0 +1,102 @@
+<div class="container py-5">
+  <h1 class="text-center mb-5 display-4 fw-bold text-gradient">Angular Pipes Demo</h1>
+
+  <div class="row g-4">
+
+    <!-- Date Pipe -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 border-0 shadow card-hover">
+        <div class="card-body">
+          <h5 class="card-title text-primary">Date Pipe</h5>
+          <p class="card-text">Short Date: {{ presentDate | date:'shortDate' }}</p>
+          <p class="card-text">Medium Date: {{ presentDate | date:'mediumDate' }}</p>
+          <p class="card-text">Full Date: {{ presentDate | date:'fullDate' }}</p>
+          <p class="card-text">Custom Format: {{ presentDate | date:'EEEE, MMM d, yyyy, h:mm a' }}</p>
+          <p class="card-text">Time Only: {{ presentDate | date:'shortTime' }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Async Pipe -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 border-0 shadow card-hover">
+        <div class="card-body">
+          <h5 class="card-title text-success">Async Pipe</h5>
+          <p class="card-text">Seconds elapsed: {{ time$ | async }}</p>
+          <p class="card-text">Medium Time: {{ time$ | async | date:'mediumTime' }}</p>
+          <p class="card-text">Short Time: {{ time$ | async | date:'shortTime' }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slice Pipe -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 border-0 shadow card-hover">
+        <div class="card-body">
+          <h5 class="card-title text-danger">Slice Pipe</h5>
+          <p class="card-text">First 3 fruits: {{ fruits | slice:0:3 }}</p>
+          <p class="card-text">Fruits from 2: {{ fruits | slice:2 }}</p>
+          <p class="card-text">Last 2 fruits: {{ fruits | slice:-2 }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Currency Pipe -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 border-0 shadow card-hover">
+        <div class="card-body">
+          <h5 class="card-title text-warning">Currency Pipe</h5>
+          <p class="card-text">USD Symbol: {{ amount | currency:'USD':'symbol' }}</p>
+          <p class="card-text">EUR Code: {{ amount | currency:'EUR':'code' }}</p>
+          <p class="card-text">JPY No decimals: {{ amount | currency:'JPY':'symbol':'1.0-0' }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decimal Pipe -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 border-0 shadow card-hover">
+        <div class="card-body">
+          <h5 class="card-title text-purple">Decimal Pipe</h5>
+          <p class="card-text">Default: {{ price | number }}</p>
+          <p class="card-text">2 decimals: {{ price | number:'1.2-2' }}</p>
+          <p class="card-text">No decimals: {{ price | number:'1.0-0' }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Percent Pipe -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 border-0 shadow card-hover">
+        <div class="card-body">
+          <h5 class="card-title text-teal">Percent Pipe</h5>
+          <p class="card-text">Default: {{ completion | percent }}</p>
+          <p class="card-text">1 decimal: {{ completion | percent:'1.1-1' }}</p>
+          <p class="card-text">No decimals: {{ completion | percent:'1.0-0' }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Uppercase Pipe -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 border-0 shadow card-hover">
+        <div class="card-body">
+          <h5 class="card-title text-pink">Uppercase Pipe</h5>
+          <p class="card-text">{{ text | uppercase }}</p>
+          <p class="card-text">Combined with slice: {{ text | slice:0:8 | uppercase }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JSON Pipe -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 border-0 shadow card-hover">
+        <div class="card-body">
+          <h5 class="card-title text-info">JSON Pipe</h5>
+          <p class="card-text">{{ person | json }}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
