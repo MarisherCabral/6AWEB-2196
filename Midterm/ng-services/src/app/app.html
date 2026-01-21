@@ -1,0 +1,51 @@
+<div class="container mt-4">
+
+  <div class="card mb-5 shadow-sm" style="border-color: #6f42c1;">
+    <div class="card-body">
+      <h2 class="text-center mb-3">EMPLOYEES LIST</h2>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>FIRST NAME</th>
+            <th>LAST NAME</th>
+            <th>EMAIL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employees; trackBy: trackById">
+            <td class="text-center">{{ employee.id }}</td>
+            <td class="text-center">{{ employee.firstname }}</td>
+            <td class="text-center">{{ employee.lastname }}</td>
+            <td class="text-center">{{ employee.email }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card shadow-sm" style="border-color: #6f42c1;">
+    <div class="card-body">
+      <h2 class="text-center mb-3">PRODUCT LIST</h2>
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th class="text-end">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products; trackBy: trackById">
+            <td class="text-center">{{ product.id }}</td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.description }}</td>
+            <td class="text-end">{{ product.price | currency:'PHP':'symbol':'1.2-2' }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
