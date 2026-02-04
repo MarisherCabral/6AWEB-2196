@@ -1,0 +1,23 @@
+<div class="page-center">
+  <div class="about-container">
+    <h2>{{ title() | uppercase }}</h2>
+
+    <p>
+      Welcome to the Community Help Desk Portal. This portal allows users to browse service tickets and announcements.
+    </p>
+
+    <p>
+      Current date and time: {{ currentDate | date:'fullDate' }} at {{ currentDate | date:'shortTime' }}
+    </p>
+
+    <section>
+      <h3>Portal Features</h3>
+      <ul>
+        <li>Browse latest updates on Home page</li>
+        <li>View full list of service tickets in Services</li>
+        <li>Filter and search posts easily</li>
+        <li>Contact form with live preview</li>
+      </ul>
+    </section>
+  </div>
+</div>

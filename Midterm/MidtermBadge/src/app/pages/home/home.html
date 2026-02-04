@@ -1,0 +1,20 @@
+<div class="home-container">
+  <!-- Main Page Title -->
+  <h1 class="page-title">Home</h1>
+  <hr class="divider" />
+
+  <!-- Section Title -->
+  <h2>Latest Updates</h2>
+
+  <div class="latest-updates">
+    <div class="post-card" *ngFor="let post of posts$ | async | slice:0:5">
+      <h4>{{ post.title | uppercase }}</h4>
+      <p>{{ post.body | slice:0:80 }}...</p>
+    </div>
+  </div>
+
+  <!-- No posts message -->
+  <div *ngIf="(posts$ | async)?.length === 0" class="no-posts">
+    No updates available.
+  </div>
+</div>

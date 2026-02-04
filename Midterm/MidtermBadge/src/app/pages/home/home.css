@@ -1,0 +1,96 @@
+.home-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+/* Main page title */
+.page-title {
+  text-align: center;
+  color: #5b2d8b;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+/* Divider under Home title */
+.divider {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #7a3db8, #9b5de5);
+  border: none;
+  border-radius: 2px;
+  margin: 0 auto 32px;
+}
+
+/* Section title */
+.home-container h2 {
+  color: #5b2d8b;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Latest updates grid */
+.latest-updates {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Post card */
+.post-card {
+  background: #f6f2fb;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(91, 45, 139, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(91, 45, 139, 0.25);
+}
+
+.post-card h4 {
+  color: #5b2d8b;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.post-card p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* No posts message */
+.no-posts {
+  text-align: center;
+  color: #7a3db8;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .latest-updates {
+    gap: 16px;
+  }
+
+  .post-card {
+    padding: 16px;
+  }
+
+  .page-title {
+    font-size: 32px;
+  }
+
+  .home-container h2 {
+    font-size: 24px;
+  }
+}

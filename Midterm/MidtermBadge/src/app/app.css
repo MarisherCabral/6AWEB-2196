@@ -1,0 +1,45 @@
+/* Navbar container */
+.navbar {
+  background-color: #4B0082; /* deep purple */
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Brand / title */
+.navbar .brand {
+  color: #E0D7FF; /* light purple */
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Navbar links container */
+.navbar .nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Navbar links */
+.navbar .nav-links a {
+  color: #E0D7FF; /* light purple text */
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+/* Hover effect (flat) */
+.navbar .nav-links a:hover {
+  background-color: #5E00A3; /* medium purple */
+  color: #FFFFFF;
+}
+
+/* Active route */
+.navbar .nav-links a.active {
+  background-color: #7B33C8; /* highlight purple */
+  color: #FFFFFF;
+}

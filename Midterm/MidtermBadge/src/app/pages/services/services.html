@@ -1,0 +1,28 @@
+<div class="services-container">
+  <h2>All Services</h2>
+
+  <input
+    type="text"
+    placeholder="Search posts..."
+    (input)="onSearch($event.target.value)"
+  />
+
+  <!-- Loading state -->
+  <div *ngIf="loading$ | async">Loading posts...</div>
+
+  <!-- Error state -->
+  <div *ngIf="error$ | async as err" style="color:red;">{{ err }}</div>
+
+  <!-- Posts list -->
+  <ul *ngIf="!(loading$ | async) && !(error$ | async)">
+    <li *ngFor="let post of filteredPosts$ | async">
+      <strong>{{ post.id }} - {{ post.title | uppercase }}</strong>
+      <p>{{ post.body | slice:0:80 }}...</p>
+    </li>
+  </ul>
+
+  <!-- No results -->
+  <div *ngIf="(filteredPosts$ | async)?.length === 0 && !(loading$ | async)">
+    No posts found.
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="page-center">
+  <h2>Contact Us</h2>
+
+  <form #f="ngForm">
+    <div>
+      <label for="name">Name:</label>
+      <input
+        id="name"
+        name="name"
+        [(ngModel)]="contactForm.name"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        [(ngModel)]="contactForm.email"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="message">Message:</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        [(ngModel)]="contactForm.message"
+        required
+      ></textarea>
+    </div>
+
+    <button type="button" (click)="f.resetForm()">Submit</button>
+  </form>
+
+  <h3>Form Preview</h3>
+  <p><strong>Name:</strong> {{ contactForm.name | uppercase }}</p>
+  <p><strong>Email:</strong> {{ contactForm.email }}</p>
+  <p><strong>Message:</strong> {{ contactForm.message }}</p>
+</div>
